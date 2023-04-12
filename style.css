@@ -87,3 +87,12 @@
 }
 
 /*es 3*/
+
+.ex-3-square{
+    transition: 2s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
