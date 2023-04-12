@@ -55,7 +55,10 @@
     position: absolute;
     top: -10px;
     left: 10%;
+    background: red;
+    /*
     background: #f5f5f5;
+    */
     width: 60px;
     height: 20px;
 }
@@ -63,7 +66,10 @@
     position: absolute;
     bottom: -10px;
     right: 20%;
+    background: red;
+    /*
     background: #f5f5f5;
+    */
     width: 60px;
     height: 20px;
 }
@@ -188,3 +194,36 @@
         transform: rotate(270deg); 
     }
 }
+
+/*es 12*/
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: button-a;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+}
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: button-b;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+}
+
+@keyframes button-a{
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+}
+
+@keyframes button-b{
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+}
+
+/*es 13*/
